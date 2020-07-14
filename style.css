@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container, #table, #section2, .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#page {
+  position: relative;
+  margin: 2% auto;
+}
+#caption {
+  color: black;
+  text-align: center;
+}
+#container {
+  padding-bottom: 80px;
+  border-top: 4px solid #BFBFBF;
+  background-color: #EFEFEF;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 50%;
+}
+#section1 {
+  justify-content: center;
+  align-items: center;
+}
+#section2 {
+  margin: 3% 2% 3% 2%;
+  flex-direction: column;
+}
+#section3 {
+  font-style: italic;
+  font-size: small;
+  text-align: center;
+  margin-top: -5%;
+}
+#table {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.element {
+  position: relative;
+}
+.box {
+  width: 160px;
+  height: 120px;
+}
+.num {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+#box1{
+  background-color: #6F98A8
+}
+#box2, #box4 {
+  background-color: #2B8EAD;
+}
+#box6, #box7{
+  background-color: #BFBFBF
+}
+#box8 {
+  background-color: #6F98A8
+}
+#box3, #box5, #box9 {
+  background-color: #2F454E;
+}
+.click-btn {
+  background-color: #72C3DC;
+  color: #FFFFFF;
+  font-size: small;
+  width: 140px;
+  height: 30px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px 20px 10px;
+  box-shadow: 3px 3px #2B8EAD;
+  user-select: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  #page {
+      margin: 6% auto 10%;
+    }
+  #container {
+    width: 90%;
+    background-color: #FFFFFF;
+    border: none;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  #section1 {
+    order: 2;
+  }
+  #section2 {
+    order: 1;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .click-btn {
+    width: 100px;
+  }
+  .element{
+    background-color: #EFEFEF;
+    margin-bottom: 6px;
+  }
+  .box {
+    width: 20px;
+    height: 60px;  
+  }  
+  .num {
+    color: #000000;
+    font-size: x-large;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width:767px) {
+  #container {
+    width: 98%;
+  }
+  .box {
+    width: 120px;
+   }
+  #section3 {
+    margin-top: -10%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width:919px){
+  #container {
+    width: 90%;
+  }
+  #section3 {
+    margin-top: -7%;
+  }
+}
+@media only screen and (min-width: 920px) and (max-width:1240px){
+  #container {
+    width: 72%;
+  }  
+}
